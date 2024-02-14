@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/itemy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Red+Hat+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -31,10 +34,80 @@
         </div>
     </nav>
 
-    <seciton id="main"></seciton>
+    <seciton id="main">
+        
+    </seciton>
+
+    <seciton id="itemy">
+        <div id="tekst">
+            <div id="col1">
+                <div id="linia_2"></div>
+                <h1>Polecamy</h1>
+                <h5>Te produkty cieszą się największą popularnością</h5>
+            </div>
+            <div id="col2">
+                <button>Więcej</button>
+            </div>
+        </div>
 
 
 
+        <div id="polecane_itemy">
+            <div id="polecany">
+                <div id="image">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTE5ODc3Ni1pbWFnZS1rd3Z5Mm42NS5qcGc.jpg"/>
+                </div>
+                <div id="opis">
+                    <h2>Pizza Capriciosa</h2>
+                    <h4>31,00 | 75,00 zł</h4>
+                </div>
+            </div>
+
+            <div id="polecany">
+                <div id="image">
+                    <img src="https://www.mojegotowanie.pl/media/cache/big/uploads/media/recipe/0002/11/pizza-pepperoni.jpeg"/>
+                </div>
+                <div id="opis">
+                    <h2>Pizza Pepperoni</h2>
+                    <h4>32,50 | 77,00 zł</h4>
+                </div>
+            </div>
+
+            <div id="polecany">
+                <div id="image">
+                    <img src="https://img.cuisineaz.com/660x660/2022/06/30/i184454-pizza-diavola.jpeg"/>
+                </div>
+                <div id="opis">
+                    <h2>Pizza Diavollo</h2>
+                    <h4>35,50 | 84,00 zł</h4>
+                </div>
+            </div>
+
+            <div id="polecany">
+                <div id="image">
+                    <img src="https://restaumatic-production.imgix.net/uploads/accounts/169285/media_library/5bd34a11-9250-4d99-a32a-e706f10f9425.jpg?auto=compress%2Cformat&blur=0&crop=focalpoint&fit=max&fp-x=0.5&fp-y=0.5&h=auto&rect=0%2C0%2C2000%2C1333&w=600"/>
+                </div>
+                <div id="opis">
+                    <h2>Pizza Parma</h2>
+                    <h4>35,50 | 81,00 zł</h4>
+                </div>
+            </div>
+
+            <div id="polecany">
+                <div id="image">
+                    <img src="https://zdrowow15minut.pl/wp-content/uploads/2020/10/20200823_160927-768x1024.jpg"/>
+                </div>
+                <div id="opis">
+                    <h2>Pizza Włoska</h2>
+                    <h4>35,50 | 84,00 zł</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </seciton>
+
+    <!-- <iframe src="./images/pizza.mp4"></iframe> -->
 
 
     <section id="footer">
@@ -63,7 +136,7 @@
                     <h1>Kontakt</h1>
                     <ul>
                         <li>tel. 58 559 21 58</li>
-                        <li><a href="https://glovoapp.com/pl/pl/gdansk/maxx-pizza/?utm_campaign=maplinks&utm_medium=organic&utm_source=googlemaps">Glovo</a></li>
+                        <li><a id="glovo" href="https://glovoapp.com/pl/pl/gdansk/maxx-pizza/?utm_campaign=maplinks&utm_medium=organic&utm_source=googlemaps">Glovo</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,6 +144,7 @@
         </div>
 
         <div id="line_2">
+            <div id="linia"></div>
             <div id="prawa">
                 <p>Copyright by www.maxxpizza.pl, Wszystkie prawa zastrzeżone.</p>
             </div>
@@ -79,6 +153,7 @@
         </div>
 
     </footer>
-
+    <script src="./scripts/dania.js"></script>
+    <script src="./scripts/dania_item.js"></script>
 </body>
 </html>

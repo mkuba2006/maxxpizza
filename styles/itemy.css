@@ -1,0 +1,95 @@
+#itemy{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 10vw 350px 10vw ;
+}
+
+#linia_2{
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #354259;
+}
+
+#itemy #tekst{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#itemy #tekst #col1 h1{
+    font-weight: 900;
+    margin: 15px 0 0 0 ;
+}
+#itemy #tekst #col1 h5{
+    font-weight: 500;
+}
+
+#col2 button{
+    padding: 10px 32px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #354259;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s ease;
+    
+}
+#col2 button:hover{
+    background-color: #354259;
+    color: white;
+}
+
+#polecane_itemy{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+
+#polecany{
+    background-color: white;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.3s ease;
+}
+#polecany #image{
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+#polecany #image img{
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+#polecany #opis{
+    padding: 8px 24px;
+}
+#polecany #opis h2{
+    font-weight: 800;
+    height: 50px;
+}
+#polecany #opis h4{
+    font-weight: 400;
+}
+#polecany:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#polecany:hover #image img{
+    scale: 1.1;
+}

@@ -1,4 +1,4 @@
-Dania=[
+Dania= [
     {
         id:1,
         Grupa:"PIZZA",

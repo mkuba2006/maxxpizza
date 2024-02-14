@@ -2,6 +2,22 @@
     padding-top: 200px;
     display: flex;
     justify-content: center;
-    height: 80vh;
-    background-color: #7D0A0A;
+    height: 60vh;
+    background-color: #FFF2F2;
+}
+
+nav{
+    background-color: #FCD8D4;
+}
+
+
+#itemy{
+    background-color: #FFF2F2;
+}
+
+#footer{
+    background-color: #FCD8D4;
+}
+button{
+    cursor: pointer;
 }

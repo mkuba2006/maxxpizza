@@ -1,7 +1,6 @@
 
 #footer{
     display: flex;
-    background-color: #3D0C11;
     padding: 10px 0;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -10,6 +9,7 @@
     position: relative;
     bottom: 0;
     padding: 40px 15vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #footer #line_1{
@@ -32,7 +32,7 @@
 
 #footer #line_1 #wiecej div h1{
     font-size: 30px;
-    color: white;
+    color: #354259;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     margin: 0 0 10px 0;
@@ -40,7 +40,7 @@
 
 #footer #line_1 #wiecej div ul{
     padding: 0 0 0 5px;
-    color: #cfcfcf;
+    color: #354259;
     font-size: 20px;
 }
 #footer #line_1 #wiecej div ul li{
@@ -55,4 +55,27 @@ iframe{
     height:350px;
     border: 0;
     border-radius: 12px;
+}
+
+#glovo{
+    text-decoration: none;
+    color: #354259;
+}
+
+
+#footer #line_2{
+    margin: 30px 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    color: #354259;
+}
+
+#linia {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #354259; 
 }
