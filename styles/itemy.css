@@ -25,6 +25,7 @@
 #itemy #tekst #col1 h1{
     font-weight: 900;
     margin: 15px 0 0 0 ;
+    font-size: 45px;
 }
 #itemy #tekst #col1 h5{
     font-weight: 500;
@@ -93,3 +94,42 @@
 #polecany:hover #image img{
     scale: 1.1;
 }
+
+#potrawa{
+    width: min-content;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+#potrawa p {
+    font-size: 15px;
+}
+
+#potrawa p:nth-child(1){
+    width: 30px;
+}
+#potrawa p:nth-child(2){
+    width: 220px;
+}
+#potrawa div{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: center;
+    gap: 10px;
+}
+
+#potrawa div #sklad {
+    margin: 0;
+    font-weight: 400;
+    width: auto;
+}
+
+#potrawa p:nth-child(4){
+    width: 70px;
+}
+#potrawa p:nth-child(5){
+    width: 70px;
+}
+

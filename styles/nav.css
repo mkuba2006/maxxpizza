@@ -10,7 +10,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 20vw;
-    z-index: 100;
+    z-index: 1000;
 }
 
 #logo_img{
@@ -40,7 +40,10 @@ nav {
     transition: all 0.3s;
 }
 
-
+#links button a{
+    text-decoration: none;
+    color: #354259;
+}
 
 #links button::before {
     content: '';

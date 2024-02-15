@@ -36,6 +36,7 @@ Dania= [
                 nazwa: "TRUFLOWA",
                 składniki: ["sos", "mozzarella", "pasta z czarnych trufli", "mascarpone", "bazylia", "oliwa truflowa"],
                 max: "35,50",
+                min: "-",
             },
             {
                 id: 7,
@@ -98,6 +99,7 @@ Dania= [
                 nazwa: "CALZONE (PIERÓG)",
                 składniki: ["sos", "ser", "pieczarki", "szynka"],
                 min: "30,00",
+                max: "-",
             },
             {
                 id: 17,
@@ -202,6 +204,7 @@ Dania= [
                 nazwa: "TARTUFFO",
                 składniki: ["sos", "mozzarella", "szynka prosciutto", "pasta z czarnych trufli", "mascarpone", "pomidorki", "rucola"],
                 max: "36,50",
+                min: "35,50",
             },
             {
                 id: 37,
