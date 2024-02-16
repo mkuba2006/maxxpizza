@@ -96,15 +96,24 @@
 }
 
 #potrawa{
+    padding: 0 10px;
     width: min-content;
     display: flex;
     justify-content: start;
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.87);
 }
 #potrawa p {
     font-size: 15px;
 }
+
+#potrawa:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+
+
+
 
 #potrawa p:nth-child(1){
     width: 30px;

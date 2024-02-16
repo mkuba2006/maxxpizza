@@ -36,7 +36,7 @@ Dania= [
                 nazwa: "TRUFLOWA",
                 składniki: ["sos", "mozzarella", "pasta z czarnych trufli", "mascarpone", "bazylia", "oliwa truflowa"],
                 max: "35,50",
-                min: "-",
+                min: "",
             },
             {
                 id: 7,
@@ -99,7 +99,7 @@ Dania= [
                 nazwa: "CALZONE (PIERÓG)",
                 składniki: ["sos", "ser", "pieczarki", "szynka"],
                 min: "30,00",
-                max: "-",
+                max: "",
             },
             {
                 id: 17,
@@ -602,18 +602,6 @@ Dania= [
     },
     {
         id:12,
-        Grupa:"",
-        potrawy: [
-            {
-                id: 1,
-                nazwa: "",
-                składniki: [],
-                cena: "",
-            },
-        ]
-    },
-    {
-        id:13,
         Grupa:"DODATKI",
         "potrawy": [
             {
@@ -655,7 +643,7 @@ Dania= [
     },
 
     {
-        id:14,
+        id:13,
         Grupa:"SOSY 100 ml",
         potrawy: [
             {
@@ -686,7 +674,7 @@ Dania= [
         ]
     },
     {
-        id:15,
+        id:14,
         Grupa:"NAPOJE",
         potrawy: [
             {
@@ -788,7 +776,7 @@ Dania= [
         ]
     },
     {
-        id:16,
+        id:15,
         Grupa:"PIWO",
         potrawy: [
             {
@@ -860,7 +848,7 @@ Dania= [
         ]        
     },
     {
-        id:17,
+        id:16,
         Grupa:"WINO",
         potrawy: [
             {

@@ -4,10 +4,7 @@ let domenu = document.getElementById('domenu');
 let itemy = document.getElementById('itemy');
 
 const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
-    let składHTML = ''; // Initialize an empty string to store HTML for składniki
-    for(let i = 0; i < skład.length; i++){
-        składHTML += `<h4 id="sklad">${skład[i]},</h4>`; // Append HTML for each składniki element
-    }
+    let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
 
     return `
         <li id="potrawa">
@@ -20,28 +17,38 @@ const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     `;
 }
 
+domenu.addEventListener('click', () => {
+    itemy.innerHTML = '';
+    itemy.innerHTML += item_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
 
-
-
-
-domenu.addEventListener('click',()=>{
-    for(let i = 0; i< dania.length; i++){
-        let typ = dania[i];
-        let dl_typu = typ.potrawy.length;
-    
-        
-    }
-    console.log(dania[0].potrawy.length);
-
-    itemy.innerHTML='';
-
-    for(let j = 0; j< dania[0].potrawy.length; j++){
+    for (let j = 0; j < dania[0].potrawy.length; j++) {
         let potrawa = dania[0].potrawy[j];
-        let jedno = potrawa.składniki;
-        
-
-
-        itemy.innerHTML += item_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, jedno)
+        itemy.innerHTML += item_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
     }
+});
 
-})
+
+
+
+
+
+const filtry_szkic = (arr) => {
+    let filtry = skład.map(arr => `<h4 id="sklad">${arr},</h4>`).join(''); 
+
+    return `
+        <li id="potrawa">
+            <p>${filtry}</p>
+        </li>
+    `;
+    itemy.innerHTML += filtry
+}
+
+const GetFiltry = () =>{
+    const arr = []
+    const filtr = dania.map(grupa=>{
+        arr.push(grupa.Grupa)
+    })
+    return arr
+}
+console.log(GetFiltry())
+
