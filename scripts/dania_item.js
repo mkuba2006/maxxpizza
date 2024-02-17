@@ -1,7 +1,10 @@
 let dania = Dania;
-let main = document.getElementById('main');
 let domenu = document.getElementById('domenu');
+
 let itemy = document.getElementById('itemy');
+let tekst = document.getElementById('tekst');
+let tekst2 = document.getElementById('polecane_itemy');
+let menu = document.getElementById('menu');
 
 const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
@@ -17,38 +20,46 @@ const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     `;
 }
 
+const lista_filtrow = document.createElement('div');
+lista_filtrow.id = 'lista_filtrow';
+
+const filtry_szkic = () => {
+    dania.forEach(arr => {
+        let link = document.createElement('a'); // Tworzymy element <a>
+        link.textContent = arr.Grupa; // Ustawiamy tekst w linku
+        link.href = '#' + arr.Grupa; // Ustawiamy atrybut href, możesz go dostosować do potrzeb
+        let button = document.createElement('button');
+        button.appendChild(link); // Dodajemy link do przycisku
+        button.id = arr.Grupa;
+        lista_filtrow.appendChild(button);
+    });
+    
+    menu.appendChild(lista_filtrow);
+};
+
+
 domenu.addEventListener('click', () => {
-    itemy.innerHTML = '';
-    itemy.innerHTML += item_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
+    tekst.innerHTML = '';
+    tekst2.innerHTML = '';
+    menu.innerHTML = '';
+
+    let ul = document.createElement('ul');
+
+    ul.innerHTML += item_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
 
     for (let j = 0; j < dania[0].potrawy.length; j++) {
         let potrawa = dania[0].potrawy[j];
-        itemy.innerHTML += item_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
+        ul.innerHTML += item_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
     }
+
+    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+
+    filtry_szkic();
+    itemy.appendChild = menu.innerHTML;
 });
 
 
 
 
 
-
-const filtry_szkic = (arr) => {
-    let filtry = skład.map(arr => `<h4 id="sklad">${arr},</h4>`).join(''); 
-
-    return `
-        <li id="potrawa">
-            <p>${filtry}</p>
-        </li>
-    `;
-    itemy.innerHTML += filtry
-}
-
-const GetFiltry = () =>{
-    const arr = []
-    const filtr = dania.map(grupa=>{
-        arr.push(grupa.Grupa)
-    })
-    return arr
-}
-console.log(GetFiltry())
 
