@@ -1,12 +1,13 @@
 let dania = Dania;
 let domenu = document.getElementById('domenu');
-
 let itemy = document.getElementById('itemy');
 let tekst = document.getElementById('tekst');
 let tekst2 = document.getElementById('polecane_itemy');
 let menu = document.getElementById('menu');
+const lista_filtrow = document.createElement('div');
+lista_filtrow.id = 'lista_filtrow';
 
-const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
+const pizza_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
 
     return `
@@ -20,46 +21,78 @@ const item_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     `;
 }
 
-const lista_filtrow = document.createElement('div');
-lista_filtrow.id = 'lista_filtrow';
+const dania_szkic = (id, nazwa, cena, skład) => {
+    let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
 
-const filtry_szkic = () => {
-    dania.forEach(arr => {
-        let link = document.createElement('a'); // Tworzymy element <a>
-        link.textContent = arr.Grupa; // Ustawiamy tekst w linku
-        link.href = '#' + arr.Grupa; // Ustawiamy atrybut href, możesz go dostosować do potrzeb
-        let button = document.createElement('button');
-        button.appendChild(link); // Dodajemy link do przycisku
-        button.id = arr.Grupa;
-        lista_filtrow.appendChild(button);
-    });
-    
-    menu.appendChild(lista_filtrow);
-};
+    return `
+        <li id="potrawa">
+            <p>${id}</p>
+            <p>${nazwa}</p>
+            <div>${składHTML}</div> 
+            <p>${cena}</p>
+        </li>
+    `;
+}
 
-
-domenu.addEventListener('click', () => {
+const ustaw_itemy = (grupa) => {
     tekst.innerHTML = '';
     tekst2.innerHTML = '';
     menu.innerHTML = '';
-
     let ul = document.createElement('ul');
+    ul.innerHTML += dania_szkic('nr', 'nazwa', 'cena', ['składniki']);
 
-    ul.innerHTML += item_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
+    const Items = Dania.filter(item => item.Grupa === grupa).map(item => item.potrawy);
+    Items.forEach(items => {
+        items.forEach(item => {
+            ul.innerHTML += dania_szkic(item.id, item.nazwa, item.cena, item.składniki);
+        });
+    });
+
+    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+
+    filtry_szkic();
+    itemy.appendChild = menu.innerHTML;
+};
+
+const filtry_szkic = () => {
+    lista_filtrow.innerHTML = ''; // Clearing lista_filtrow div
+    dania.forEach(arr => {
+        let link = document.createElement('a');
+        link.textContent = arr.Grupa;
+        let button = document.createElement('button');
+        button.appendChild(link);
+        button.id = arr.Grupa;
+        
+        lista_filtrow.appendChild(button);
+
+        link.addEventListener('click',()=>{
+            if ( link.textContent === "DANIA MIĘSNE" || link.textContent === "PLACKI ZIEMNIACZANE" || link.textContent === "DANIA Z GRILLA" ||
+                link.textContent === "MAKARONY 500 g" || link.textContent === "SAŁATKI 450g" || link.textContent === "RYBY I OWOCE MORZA" ||
+                link.textContent === "NA SŁODKO") {
+                console.log(link.textContent);
+                ustaw_itemy(link.textContent);
+            }
+        })
+    });
+    menu.appendChild(lista_filtrow);
+};
+
+const ustaw__default_itemy = (grupa) => {
+    tekst.innerHTML = '';
+    tekst2.innerHTML = '';
+    menu.innerHTML = '';
+    let ul = document.createElement('ul');
+    ul.innerHTML += pizza_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
 
     for (let j = 0; j < dania[0].potrawy.length; j++) {
         let potrawa = dania[0].potrawy[j];
-        ul.innerHTML += item_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
+        ul.innerHTML += pizza_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
     }
 
     menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
 
     filtry_szkic();
     itemy.appendChild = menu.innerHTML;
-});
+};
 
-
-
-
-
-
+domenu.addEventListener('click', ustaw__default_itemy);

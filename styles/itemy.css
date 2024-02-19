@@ -152,7 +152,7 @@
 #lista_filtrow{
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 13px;
 }
 
 #lista_filtrow button {

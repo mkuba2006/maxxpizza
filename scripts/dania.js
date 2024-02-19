@@ -596,6 +596,7 @@ Dania= [
             {
                 id: 84,
                 nazwa: "SERNIK Z NUTELLĄ",
+                składniki: [""],
                 cena: "17,00",
             },
         ]
