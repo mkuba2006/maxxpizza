@@ -1,33 +1,41 @@
-
-#footer{
+#footer {
     display: flex;
-    padding: 10px 0;
-    justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: column;
-    column-gap: 20vw;
-    position: relative;
-    bottom: 0;
-    padding: 40px 15vw;
+    padding: 40px 10vw;
     font-family: 'Montserrat', sans-serif;
+    color: #354259;
 }
 
-#footer #line_1{
-    display: flex;
-    justify-content: space-between;
-    gap: 150px;
-    flex-direction: row;
+@media screen and (max-width: 1470px){
+    #footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 50px;
+        font-family: 'Montserrat', sans-serif;
+        color: #354259;
+        overflow-x: hidden;
+    }
 }
-#footer #line_1 #wiecej{
+
+
+#footer #line_1 {
     display: flex;
-    flex-direction: row;
-    gap: 120px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer #line_1 #wiecej {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 #footer #line_1 #wiecej div{
     display: flex;
     flex-direction: column;
     align-items: start;
+    width: min-content;
 }
 
 #footer #line_1 #wiecej div h1{
@@ -38,14 +46,29 @@
     margin: 0 0 10px 0;
 }
 
+
+#footer #line_1 #wiecej div#dane{
+    max-width: 150px;
+}
+#footer #line_1 #wiecej div#kontakt{
+    max-width: 180px;
+}
+
+#footer #line_1 #wiecej div#kontakt ul{
+    max-width: 180px;
+}
+
+
 #footer #line_1 #wiecej div ul{
     padding: 0 0 0 5px;
     color: #354259;
     font-size: 20px;
+    max-width: 220px;
 }
 #footer #line_1 #wiecej div ul li{
     list-style-type: none;
     margin-bottom: 5px;
+    width: auto;
 }
 
 

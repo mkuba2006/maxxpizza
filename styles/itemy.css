@@ -47,13 +47,25 @@
     color: white;
 }
 
-#polecane_itemy{
+#polecane_itemy {
     margin-top: 35px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: flex-start;
+    max-height: 470px; /* Ustaw maksymalną wysokość */
+    overflow: hidden; /* Ukryj elementy, które nie mieszczą się w pierwszej linii */
 }
+
+#polecane_itemy > * {
+    visibility: hidden; /* Ukryj wszystkie elementy */
+}
+
+#polecane_itemy > *:nth-child(-n+4) {
+    visibility: visible; /* Pokaż pierwsze 4 elementy */
+}
+
 
 
 #polecany{
@@ -114,33 +126,11 @@
 
 
 
-
-#potrawa p:nth-child(1){
-    width: 30px;
-}
-#potrawa p:nth-child(2){
-    width: 220px;
-}
-#potrawa div{
-    display: flex;
-    flex-direction: row;
-    width: 800px;
-    align-items: center;
-    gap: 10px;
+ul{
+    width: 80vw;
 }
 
-#potrawa div #sklad {
-    margin: 0;
-    font-weight: 400;
-    width: auto;
-}
 
-#potrawa p:nth-child(4){
-    width: 70px;
-}
-#potrawa p:nth-child(5){
-    width: 70px;
-}
 
 
 
@@ -153,6 +143,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 13px;
+    width: 200px;
 }
 
 #lista_filtrow button {

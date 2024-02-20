@@ -25,7 +25,7 @@ const dania_szkic = (id, nazwa, cena, skład) => {
     let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
 
     return `
-        <li id="potrawa">
+        <li id="potrawa2">
             <p>${id}</p>
             <p>${nazwa}</p>
             <div>${składHTML}</div> 
@@ -33,6 +33,39 @@ const dania_szkic = (id, nazwa, cena, skład) => {
         </li>
     `;
 }
+
+
+
+const pierogi_szkic = (id, nazwa, cena) => {
+    return `
+        <li id="pierogi">
+            <p>${id}</p>
+            <p>${nazwa}</p>
+            <p>${cena}</p>
+        </li>
+    `;
+}
+
+const ustaw_pierogi = (grupa) => {
+    tekst.innerHTML = '';
+    tekst2.innerHTML = '';
+    menu.innerHTML = '';
+    let ul = document.createElement('ul');
+    ul.innerHTML += pierogi_szkic('nr', 'nazwa', 'cena');
+
+    const Items = Dania.filter(item => item.Grupa === grupa).map(item => item.potrawy);
+    Items.forEach(items => {
+        items.forEach(item => {
+            ul.innerHTML += pierogi_szkic(item.id, item.nazwa, item.cena);
+        });
+    });
+
+    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+
+    filtry_szkic();
+    itemy.appendChild = menu.innerHTML;
+}
+
 
 const ustaw_itemy = (grupa) => {
     tekst.innerHTML = '';
@@ -54,8 +87,10 @@ const ustaw_itemy = (grupa) => {
     itemy.appendChild = menu.innerHTML;
 };
 
+
+
 const filtry_szkic = () => {
-    lista_filtrow.innerHTML = ''; // Clearing lista_filtrow div
+    lista_filtrow.innerHTML = '';
     dania.forEach(arr => {
         let link = document.createElement('a');
         link.textContent = arr.Grupa;
@@ -65,13 +100,18 @@ const filtry_szkic = () => {
         
         lista_filtrow.appendChild(button);
 
-        link.addEventListener('click',()=>{
+        button.addEventListener('click',()=>{
             if ( link.textContent === "DANIA MIĘSNE" || link.textContent === "PLACKI ZIEMNIACZANE" || link.textContent === "DANIA Z GRILLA" ||
                 link.textContent === "MAKARONY 500 g" || link.textContent === "SAŁATKI 450g" || link.textContent === "RYBY I OWOCE MORZA" ||
                 link.textContent === "NA SŁODKO") {
                 console.log(link.textContent);
                 ustaw_itemy(link.textContent);
+            }else if( link.textContent === "PIZZA"){
+                ustaw__default_itemy();
+            }else if(link.textContent === "PIEROGI 10 szt." || "DANIE DLA DZIECI" || "ZUPY 350 ml"){
+                ustaw_pierogi(link.textContent);
             }
+
         })
     });
     menu.appendChild(lista_filtrow);
@@ -90,7 +130,6 @@ const ustaw__default_itemy = (grupa) => {
     }
 
     menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
-
     filtry_szkic();
     itemy.appendChild = menu.innerHTML;
 };

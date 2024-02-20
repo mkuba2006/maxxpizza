@@ -1,0 +1,57 @@
+#potrawa2{
+    padding: 0 10px;
+    width: min-content;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+
+
+#potrawa2 p {
+    font-size: 15px;
+}
+
+#potrawa2:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+
+#potrawa2:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    height: 50px;
+}
+
+#potrawa2:nth-child(1) p{
+    margin: auto 0;
+    
+}
+
+#potrawa2 p:nth-child(1){
+    width: 30px;
+}
+#potrawa2 p:nth-child(2){
+    width: 300px;
+}
+
+#potrawa2 p:nth-child(4){
+    width: 70px;
+}
+#potrawa2 p:nth-child(5){
+    width: 70px;
+}
+
+#potrawa2 div{
+    display: flex;
+    flex-direction: row;
+    width: 870px;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-weight: 400;
+}
+
+#potrawa2 div #sklad {
+    font-weight: 400;
+}

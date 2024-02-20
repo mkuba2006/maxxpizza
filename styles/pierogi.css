@@ -1,0 +1,27 @@
+
+
+#pierogi{
+    padding: 0 10px;
+    width: min-content;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+#pierogi:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+}
+
+#pierogi p:nth-child(1){
+    width: 30px;
+}
+#pierogi p:nth-child(2){
+    width: 1170px;
+}
+#pierogi p:nth-child(3){
+    width: 70px;
+}
+

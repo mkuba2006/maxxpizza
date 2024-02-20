@@ -14,10 +14,11 @@ nav{
 }
 button{
     cursor: pointer;
+
 }
 
-
 #main {
+    overflow-x: hidden;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -35,11 +36,11 @@ button{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    height: 100%; /* Dodane */
+    object-fit: cover; /* Dodane */
     z-index: -1; 
-    position: fixed;
 }
+
 #main p {
     z-index: 100;
     color: white;
