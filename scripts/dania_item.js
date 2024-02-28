@@ -47,7 +47,7 @@ const pierogi_szkic = (id, nazwa, cena) => {
 }
 
 const ustaw_pierogi = (grupa) => {
-    tekst.innerHTML = '';
+    
     tekst2.innerHTML = '';
     menu.innerHTML = '';
     let ul = document.createElement('ul');
@@ -68,8 +68,7 @@ const ustaw_pierogi = (grupa) => {
 
 
 const ustaw_itemy = (grupa) => {
-    tekst.innerHTML = '';
-    tekst2.innerHTML = '';
+    
     menu.innerHTML = '';
     let ul = document.createElement('ul');
     ul.innerHTML += dania_szkic('nr', 'nazwa', 'cena', ['składniki']);
@@ -118,7 +117,9 @@ const filtry_szkic = () => {
 };
 
 const ustaw__default_itemy = (grupa) => {
-    tekst.innerHTML = '';
+    document.querySelector("#col1 > h1").textContent = 'Menu';
+    document.querySelector("#col1 > h5").textContent = 'Zobacz naszą ofertę';
+    document.getElementById("col2").style.display='none';
     tekst2.innerHTML = '';
     menu.innerHTML = '';
     let ul = document.createElement('ul');

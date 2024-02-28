@@ -24,7 +24,7 @@
 }
 #itemy #tekst #col1 h1{
     font-weight: 900;
-    margin: 15px 0 0 0 ;
+    margin: 10px 0 0 0 ;
     font-size: 45px;
 }
 #itemy #tekst #col1 h5{
@@ -54,16 +54,16 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: flex-start;
-    max-height: 470px; /* Ustaw maksymalną wysokość */
-    overflow: hidden; /* Ukryj elementy, które nie mieszczą się w pierwszej linii */
+    max-height: 470px; 
+    overflow: hidden;
 }
 
 #polecane_itemy > * {
-    visibility: hidden; /* Ukryj wszystkie elementy */
+    visibility: hidden; 
 }
 
 #polecane_itemy > *:nth-child(-n+4) {
-    visibility: visible; /* Pokaż pierwsze 4 elementy */
+    visibility: visible;
 }
 
 
@@ -139,12 +139,13 @@ ul{
     display: flex;
     flex-direction: row-reverse;
 }
-#lista_filtrow{
+#lista_filtrow {
     display: flex;
     flex-direction: column;
     padding-top: 13px;
     width: 200px;
 }
+
 
 #lista_filtrow button {
     font-family: 'Montserrat', sans-serif;

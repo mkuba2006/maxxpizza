@@ -1,16 +1,16 @@
 
 
 nav{
-    background-color: #FCD8D4;
+    background-color: #D8E5D6
 }
 
 
 #itemy{
-    background-color: #FFF2F2;
+    background-color: #F4F3E7;
 }
 
 #footer{
-    background-color: #FCD8D4;
+    background-color: #D8E5D6
 }
 button{
     cursor: pointer;
@@ -29,6 +29,10 @@ button{
     background-color: rgba(0, 0, 0, 0.733);
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.4)), url('../images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #main video {
