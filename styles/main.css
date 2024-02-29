@@ -1,7 +1,7 @@
 
 
 nav{
-    background-color: #D8E5D6
+    background-color: #F4F3E7
 }
 
 
@@ -10,7 +10,7 @@ nav{
 }
 
 #footer{
-    background-color: #D8E5D6
+    background-color: #F4F3E7
 }
 button{
     cursor: pointer;
@@ -29,7 +29,7 @@ button{
     background-color: rgba(0, 0, 0, 0.733);
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.4)), url('../images/bg2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://img.freepik.com/free-photo/rosemary-near-pizzas-utensils_23-2147772097.jpg?t=st=1709233495~exp=1709237095~hmac=430cf7d6961e3429e17393bdb3241a7f73e64723f7f4ac4255f3ffe68292ef08&w=1380');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,8 +40,8 @@ button{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Dodane */
-    object-fit: cover; /* Dodane */
+    height: 100%;
+    object-fit: cover; 
     z-index: -1; 
 }
 

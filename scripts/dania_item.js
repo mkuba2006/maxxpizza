@@ -2,8 +2,9 @@ let dania = Dania;
 let domenu = document.getElementById('domenu');
 let itemy = document.getElementById('itemy');
 let tekst = document.getElementById('tekst');
-let tekst2 = document.getElementById('polecane_itemy');
+let tekst2 = document.getElementById('swiper');
 let menu = document.getElementById('menu');
+let rlmenu = document.getElementById('square1');
 const lista_filtrow = document.createElement('div');
 lista_filtrow.id = 'lista_filtrow';
 
@@ -47,9 +48,7 @@ const pierogi_szkic = (id, nazwa, cena) => {
 }
 
 const ustaw_pierogi = (grupa) => {
-    
-    tekst2.innerHTML = '';
-    menu.innerHTML = '';
+    rlmenu.innerHTML = '';
     let ul = document.createElement('ul');
     ul.innerHTML += pierogi_szkic('nr', 'nazwa', 'cena');
 
@@ -60,16 +59,16 @@ const ustaw_pierogi = (grupa) => {
         });
     });
 
-    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+    rlmenu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
 
     filtry_szkic();
-    itemy.appendChild = menu.innerHTML;
+    itemy.appendChild = rlmenu.innerHTML;
 }
 
 
 const ustaw_itemy = (grupa) => {
     
-    menu.innerHTML = '';
+    rlmenu.innerHTML = '';
     let ul = document.createElement('ul');
     ul.innerHTML += dania_szkic('nr', 'nazwa', 'cena', ['składniki']);
 
@@ -80,10 +79,10 @@ const ustaw_itemy = (grupa) => {
         });
     });
 
-    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+    rlmenu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
 
     filtry_szkic();
-    itemy.appendChild = menu.innerHTML;
+    itemy.appendChild = rlmenu.innerHTML;
 };
 
 
@@ -113,14 +112,13 @@ const filtry_szkic = () => {
 
         })
     });
-    menu.appendChild(lista_filtrow);
+    document.getElementById('dlamenu').appendChild(lista_filtrow);
 };
 
 const ustaw__default_itemy = (grupa) => {
-    document.querySelector("#col1 > h1").textContent = 'Menu';
-    document.querySelector("#col1 > h5").textContent = 'Zobacz naszą ofertę';
+    // document.querySelector("#col1 > h1").textContent = 'Menu';
+    // document.querySelector("#col1 > h5").textContent = 'Zobacz naszą ofertę';
     document.getElementById("col2").style.display='none';
-    tekst2.innerHTML = '';
     menu.innerHTML = '';
     let ul = document.createElement('ul');
     ul.innerHTML += pizza_szkic('nr', 'nazwa', 'min', 'max', ['składniki']);
@@ -130,9 +128,10 @@ const ustaw__default_itemy = (grupa) => {
         ul.innerHTML += pizza_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
     }
 
-    menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
+    //menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
     filtry_szkic();
     itemy.appendChild = menu.innerHTML;
+    rlmenu.innerHTML = `<ul>${ul.innerHTML}</ul>`;
 };
-
+ustaw__default_itemy();
 domenu.addEventListener('click', ustaw__default_itemy);

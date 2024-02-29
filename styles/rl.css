@@ -1,0 +1,42 @@
+#real_menu{
+    width: 100vw;
+    height: 800px;
+    background-color: #a9c1a9;
+    display: flex;
+    flex-direction: row;
+}
+
+#square1{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square2{
+    background: url('https://images.ctfassets.net/eum7w7yri3zr/6VdGzsyqFMAmcwCzkkAuDT/9c07515de5da9e0b427160c377424f55/GGoogle-App-Campaign-sweetpass-1200x1200.jpg?w=1200&q=75&fm=avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: min-content;
+    height: 100%;
+}
+
+
+
+#dlamenu{
+    display: flex;
+    justify-content: flex-start;
+    margin: 100px 0  0 100px;
+    align-items: center;
+}
+
+
+#square1 ul{
+    width: min-content;
+    height: 600px;
+    overflow-y: scroll;
+    scrollbar-width: thin; 
+    scrollbar-color: #000000 transparent;
+}

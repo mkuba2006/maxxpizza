@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/itemy.css">
     <link rel="stylesheet" href="./styles/potrawa.css">
+    <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/pierogi.css">
+    <link rel="stylesheet" href="./styles/rl.css">
     <link rel="stylesheet" href="./styles/potrawa2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Red+Hat+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <nav>
@@ -59,57 +62,111 @@
 
 
 
-        <div id="polecane_itemy">
-            <div id="polecany">
-                <div id="image">
-                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTE5ODc3Ni1pbWFnZS1rd3Z5Mm42NS5qcGc.jpg"/>
-                </div>
-                <div id="opis">
-                    <h2>Pizza Capriciosa</h2>
-                    <h4>31,00 | 75,00 zł</h4>
-                </div>
+        <div class="swiper mySwiper" id="swp">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">    
+                <div id="cnt">   
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/thinly-sliced-pepperoni-is-popular-pizza-topping-american-style-pizzerias-isolated-white-background-still-life_639032-229.jpg?t=st=1709159103~exp=1709162703~hmac=1233c86712f451df4e8399672d42dba59fe16f47aa28bba0e19d8466e6be4101&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>Pizza Diavollo</h2>
+                            <h4> Pizza Diavollo to pikantna kompozycja z pepperoni, papryczkami chili, ostrym sosem Arrabbiata.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view_639032-297.jpg?t=st=1709159552~exp=1709163152~hmac=8b91d7a32f21b89d43a365d47858cc9778eb912887efb7b29fe96bdb8971ace8&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>Pizza Parma</h2>
+                            <h4>Pizza Parma to włoska pizza z dodatkiem szynki Parm prosciutto, rukoli i płatków sera Parmigiano-Reggiano.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/pizza-with-cheese-tomato-isolated-white-background-pizza-margarita-top-view-photo-menu_639032-301.jpg?t=st=1709159657~exp=1709163257~hmac=4fbce93dc0d6e7f553d1f9d0e00bd7305aa8fc49aed27b3e4e713d8d34dd76d5&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>Pizza Włoska</h2>
+                            <h4>Pizza włoska to klasyka kuchni z sosem pomidorowym, mozzarellą i różnorodnymi dodatkami, jak szynka czy pieczarki.</h4>
+                        </div>
+                    </div>
+                </div>     
             </div>
-
-            <div id="polecany">
-                <div id="image">
-                    <img src="https://www.mojegotowanie.pl/media/cache/big/uploads/media/recipe/0002/11/pizza-pepperoni.jpeg"/>
-                </div>
-                <div id="opis">
-                    <h2>Pizza Pepperoni</h2>
-                    <h4>32,50 | 77,00 zł</h4>
-                </div>
+              <div class="swiper-slide">
+                <div id="cnt">   
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/spaghetti-meatball-topped-with-parmesan-basil-food-photography_53876-96047.jpg?t=st=1709225347~exp=1709228947~hmac=212aed98b1920f0f66cceefa57c405066f3548f554c567d36627aebc275cb7b3&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>SPAGHETTI BOLOGNESE</h2>
+                            <h4>Spaghetti Bolognese to tradycyjne danie włoskie z makaronem spaghetti i gęstym sosem mięsnym zawierającym wołowinę, pomidory i przyprawy.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/high-angle-view-fettuccine-with-meatballs-sauce-bowl-lights_181624-29804.jpg?t=st=1709225439~exp=1709229039~hmac=e6e43b2113816287ed9a9da9fc97eb68b3d2724a205ac21e9aa31d2d114be7a7&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>PAPPARDELLE ZE SZPINAKIEM</h2>
+                            <h4>Pappardelle ze szpinakiem to włoska pasta o szerokich wstęgach z dodatkiem szpinaku, tworząca aromatyczne danie.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/spaghetti-with-marinara-tomato-sauce-topped-with-parmesan-basil_53876-96867.jpg?t=st=1709225553~exp=1709229153~hmac=6d5db0cac3aa8602f8a7ab0f39b6607533f0487b49e52b958962c6e67dda94ad&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>SPAGHETTI CARBONARA</h2>
+                            <h4>Spaghetti Carbonara to klasyczne włoskie danie z makaronem spaghetti, sosem carbonara wykonanym z jajek, sera parmezan, pancetty i pieprzu.</h4>
+                        </div>
+                    </div>
+                </div>     
+              </div>
+    
+    
+              <div class="swiper-slide">
+                <div id="cnt">   
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/from-beyti-kebab-with-yogurt-lemon-salad-white-plate_176474-2609.jpg?t=st=1709225745~exp=1709229345~hmac=286a353465f6d0f6074f8a27551bd2e1b48f3f7702ad5c00c277ff5aa363e0ba&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>GYROS 250G</h2>
+                            <h4>Gyros to tradycyjne greckie danie z mięsa, zazwyczaj wieprzowego lub drobiowego, przyrządzanego na opiekanych pionowych rożnach, podawane z pitą i dodatkami jak sałatka, pomidory czy sos tzatziki.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/top-view-fried-chicken-with-tomatoes-salad-plate_23-2148682822.jpg?t=st=1709225881~exp=1709229481~hmac=3499ad8605593c535aad12c59a30e1d3705b9af00a51077df40136f3e5be0ff6&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>SZNYCEL Z JAJKIEM 250g</h2>
+                            <h4>Sznycel z jajkiem to danie mięsne składające się z 250g cienko krojonego mięsa, często wołowego lub wieprzowego, smażonego lub panierowanego, z dodanym jajkiem sadzonym na wierzchu.</h4>
+                        </div>
+                    </div>
+    
+                    <div id="polecany2">
+                        <div id="image">
+                            <img src="https://img.freepik.com/free-photo/high-angle-steak-plate-with-salad-cleaver_23-2148611062.jpg?t=st=1709225977~exp=1709229577~hmac=0a61ee603e27d1bfbcac439e5be13c860291844ad78dc836d36989b90fe0f264&w=740"/>
+                        </div>
+                        <div id="opis">
+                            <h2>KARKÓWKA MARYNOWANA 400g</h2>
+                            <h4>Karkówka marynowana to mięsna przekąska, w której kawałki karkówki są marynowane w mieszance przypraw przed przygotowaniem.</h4>
+                        </div>
+                    </div>
+                </div>     
+              </div>
             </div>
-
-            <div id="polecany">
-                <div id="image">
-                    <img src="https://img.cuisineaz.com/660x660/2022/06/30/i184454-pizza-diavola.jpeg"/>
-                </div>
-                <div id="opis">
-                    <h2>Pizza Diavollo</h2>
-                    <h4>35,50 | 84,00 zł</h4>
-                </div>
-            </div>
-
-            <div id="polecany">
-                <div id="image">
-                    <img src="https://restaumatic-production.imgix.net/uploads/accounts/169285/media_library/5bd34a11-9250-4d99-a32a-e706f10f9425.jpg?auto=compress%2Cformat&blur=0&crop=focalpoint&fit=max&fp-x=0.5&fp-y=0.5&h=auto&rect=0%2C0%2C2000%2C1333&w=600"/>
-                </div>
-                <div id="opis">
-                    <h2>Pizza Parma</h2>
-                    <h4>35,50 | 81,00 zł</h4>
-                </div>
-            </div>
-
-            <div id="polecany">
-                <div id="image">
-                    <img src="https://zdrowow15minut.pl/wp-content/uploads/2020/10/20200823_160927-768x1024.jpg"/>
-                </div>
-                <div id="opis">
-                    <h2>Pizza Włoska</h2>
-                    <h4>35,50 | 84,00 zł</h4>
-                </div>
-            </div>
-
         </div>
 
 
@@ -117,10 +174,18 @@
 
 
 
-        
+
+
         <div id="menu"></div>
     </section>
     
+    <section id="real_menu">
+        <div id="square1">
+        </div>
+        <div id="square2">
+            <div id="dlamenu"></div>
+        </div>
+    </section>
 
 
 
@@ -139,34 +204,28 @@
             <div id="wiecej">
                 <div id="adres">
                     <h1>Adres</h1>
-                    <ul>
+                    <ul id="ull">
                         <li>ul. Pilotów 3 GDAŃSK ZASPA</li>
                     </ul>
                 </div>
-    
 
                 <div id="kontakt">
                     <h1>Kontakt</h1>
-                    <ul>
+                    <ul id="ull">
                         <li>tel. 58 559 21 58</li>
                         <li><a id="glovo" href="https://glovoapp.com/pl/pl/gdansk/maxx-pizza/?utm_campaign=maplinks&utm_medium=organic&utm_source=googlemaps">Glovo</a></li>
                     </ul>
                 </div>
 
-
-
                 <div id="dane">
                     <h1>Info</h1>
-                    <ul>
+                    <ul id="ull">
                         <li><a id="Domenu">menu</a></li>
                         <li><a id="Dogaleria">galeria</a></li>
                         <li><a id="Dowiecej">wiecej</a></li>
                     </ul>
                 </div>
-    
-                
             </div>
-
         </div>
 
         <div id="line_2">
@@ -174,14 +233,13 @@
             <div id="prawa">
                 <p>Copyright by www.maxxpizza.pl, Wszystkie prawa zastrzeżone.</p>
             </div>
-
-
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/dania.js"></script>
+    <script src="./scripts/swp.js"></script>
     <script src="./scripts/dania_item.js"></script>
+
 </body>
 </html>

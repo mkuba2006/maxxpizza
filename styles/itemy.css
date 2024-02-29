@@ -4,7 +4,7 @@
     flex-direction: column;
     padding: 0 5vw;
     font-family: 'Montserrat', sans-serif;
-    padding: 50px 10vw 350px 10vw ;
+    padding: 50px 7vw 50px 7vw ;
 }
 
 #linia_2{
@@ -140,6 +140,7 @@ ul{
     flex-direction: row-reverse;
 }
 #lista_filtrow {
+    height: max-content;
     display: flex;
     flex-direction: column;
     padding-top: 13px;

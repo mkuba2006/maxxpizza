@@ -4,7 +4,8 @@
     padding: 0 10px;
     width: min-content;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     border-bottom: 1px solid rgba(0, 0, 0, 0.87);
     font-size: 15px;
@@ -19,7 +20,7 @@
     width: 30px;
 }
 #pierogi p:nth-child(2){
-    width: 1170px;
+    width: 670px;
 }
 #pierogi p:nth-child(3){
     width: 70px;

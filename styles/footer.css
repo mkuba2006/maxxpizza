@@ -54,18 +54,18 @@
     max-width: 180px;
 }
 
-#footer #line_1 #wiecej div#kontakt ul{
+#footer #line_1 #wiecej div#kontakt #ull{
     max-width: 180px;
 }
 
 
-#footer #line_1 #wiecej div ul{
+#footer #line_1 #wiecej div #ull{
     padding: 0 0 0 5px;
     color: #354259;
     font-size: 20px;
     max-width: 220px;
 }
-#footer #line_1 #wiecej div ul li{
+#footer #line_1 #wiecej div #ull li{
     list-style-type: none;
     margin-bottom: 5px;
     width: auto;
