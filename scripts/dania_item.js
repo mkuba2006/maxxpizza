@@ -4,7 +4,7 @@ let itemy = document.getElementById('itemy');
 let tekst = document.getElementById('tekst');
 let tekst2 = document.getElementById('swiper');
 let menu = document.getElementById('menu');
-let rlmenu = document.getElementById('square1');
+let rlmenu = document.getElementById('menu_lista');
 const lista_filtrow = document.createElement('div');
 lista_filtrow.id = 'lista_filtrow';
 
