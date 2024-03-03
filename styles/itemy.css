@@ -7,6 +7,21 @@
     padding: 50px 7vw 50px 7vw ;
 }
 
+@media screen and (max-width: 1900px){
+    #itemy{
+        padding: 50px 1vw 50px 1vw ;
+    }
+    #itemy #tekst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 6vw 0 6vw ;
+    }
+}
+
+
 #linia_2{
     position: absolute;
     height: 2px;

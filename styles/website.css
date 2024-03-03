@@ -1,7 +1,6 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
-    /* background-color: #040303; */
     box-sizing: content-box;
     overflow-x: hidden;
 }

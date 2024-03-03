@@ -64,3 +64,21 @@
     margin: 0;
     padding: 0;
 }
+
+
+@media screen and (max-width: 1600px){
+    #mn{
+        margin: 3vh 0 0 5vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu_lista > ul{
+        width: 47vw;
+        margin: 0 auto;
+    }
+    #square1{
+        padding: 0;
+    }
+}
