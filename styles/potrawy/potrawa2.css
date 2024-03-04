@@ -53,3 +53,27 @@
     font-weight: 400;
     margin: 0;
 }
+
+
+
+@media screen and (max-width: 1600px){
+
+    
+    #potrawa2 p:nth-child(1){
+        width: 2vw;
+    }
+    #potrawa2 p:nth-child(2){
+        width: 8vw;
+    }
+    
+    #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
+        width: 4vw;
+    }
+    
+    #potrawa2 div{
+        width: 25vw;
+        padding: 0 10px;
+    }
+
+
+}

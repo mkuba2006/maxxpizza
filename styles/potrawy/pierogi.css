@@ -3,7 +3,7 @@
     width: min-content;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
     border-bottom: 1px solid #000000;
     font-size: 14px;
@@ -27,3 +27,27 @@
     width: 70px;
 }
 
+
+@media screen and (max-width: 1600px){
+    #pierogi:nth-child(1) {
+        height: 50px;
+    }
+    
+    #pierogi p:nth-child(1){
+        width: 2vw;
+    }
+    #pierogi p:nth-child(2){
+        width: 34vw;
+    }
+    
+    #pierogi p:nth-child(4) , #pierogi p:nth-child(5){
+        width: 4vw;
+    }
+    
+    #pierogi div{
+        width: 25vw;
+        padding: 0 10px;
+    }
+
+
+}
