@@ -19,12 +19,15 @@
 
 #pierogi p:nth-child(1){
     width: 30px;
+    color: white;
 }
 #pierogi p:nth-child(2){
     width: 670px;
+    color: white;
 }
 #pierogi p:nth-child(3){
     width: 70px;
+    color: white;
 }
 
 

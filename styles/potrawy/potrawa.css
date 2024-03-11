@@ -21,20 +21,25 @@
 #potrawa:nth-child(1) p{
     margin: auto 0;
     
+    color: white;
 }
 
 #potrawa p:nth-child(1){
     width: 25px;
+    color: white;
 }
 #potrawa p:nth-child(2){
     width: 160px;
+    color: white;
 }
 
 #potrawa p:nth-child(4) , #potrawa p:nth-child(5){
     width: 50px;
+    color: white;
 }
 #potrawa div{
     width: 600px;
+    color: white;
 }
 
 #potrawa div{
@@ -48,6 +53,7 @@
     padding: 0 15px 0 10px;
     font-weight: 400;
     margin: 5px 0;
+    color: white;
 }
 
 #potrawa div #sklad {
@@ -64,9 +70,11 @@
     
     #potrawa p:nth-child(1){
         width: 2vw;
+        margin-right: 5px;
     }
     #potrawa p:nth-child(2){
         width: 8vw;
+        min-width: 110px;
     }
     
     #potrawa p:nth-child(4) , #potrawa p:nth-child(5){
@@ -76,6 +84,7 @@
     #potrawa div{
         width: 25vw;
         padding: 0 10px;
+        min-width: 300px;
     }
 
 }

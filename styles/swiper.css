@@ -9,9 +9,8 @@ body {
 
 
 .swiper {
-  width: 1600px;
+  width: 100vw;
   height: 700px;
-  background-color: #F4F3E7
 }
 
 .swiper-slide {
@@ -44,7 +43,6 @@ body {
 
 .swiper-pagination-bullet-active {
   color: #fff;
-  background: #F4F3E7;
 }
 #cnt{
     display: flex;
@@ -97,7 +95,6 @@ body {
   .swiper {
     width: 100%;
     height: auto;
-    background-color: #F4F3E7
   }
 
   #cnt{
@@ -145,4 +142,44 @@ body {
     height: max-content;
     margin: 0 0 20px 0;
   }
+}
+
+
+#itemy > div.center.slick-initialized.slick-slider{
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 1200px;
+}
+
+#itemy > div.center.slick-initialized.slick-slider > div {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+  overflow: visible;
+}
+
+#itemy > div.center.slick-initialized.slick-slider > div > div > div{
+  background: url('https://img.freepik.com/free-photo/dark-grunge-texture_1048-4055.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1709942400&semt=ais');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 25px;
+  width: 150px;
+  overflow: visible;
+  border-radius: 20px;
+}
+
+#itemy > div.center.slick-initialized.slick-slider > div > div div img{
+  width: 250px;
+  transform: translateY(-100px);
+  border-radius: 50%;
+}
+#itemy > div.center.slick-initialized.slick-slider > div > div div h3{
+  transform: translateY(-50px);
+  font-size: 25px;
+  color: #D80032;
+}
+#itemy > div.center.slick-initialized.slick-slider > div > div div h3 span{
+  color: white;
 }

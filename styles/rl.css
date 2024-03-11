@@ -1,19 +1,26 @@
 #real_menu{
     width: 100vw;
     height: 800px;
-    background-color: #a9c1a9;
+    background-color: #1b1b1b;;
     display: flex;
     flex-direction: row;
 }
 
 #square1{
     padding: 50px;
-    width: 50vw;
+    width: 60vw;
+    min-width: 1050px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     gap: 80px;
     align-items: center;
+}
+
+#dr{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 #mn{
@@ -26,6 +33,7 @@
     font-weight: 900;
     margin: 10px 0px 0px;
     font-size: 45px;
+    color: white;
 }
 
 #square2{
@@ -33,7 +41,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 40vw;
     height: min-content;
     height: 100%;
 }
@@ -45,6 +53,7 @@
     justify-content: flex-start;
     margin: 0;
     align-items: center;
+    transform: translateY(-65px);
 }
 
 
@@ -67,6 +76,17 @@
 
 
 @media screen and (max-width: 1600px){
+    
+    #square1{
+        width: 60vw;
+        min-width: 950px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+    }
+
     #mn{
         margin: 3vh 0 0 5vw;
         width: 100%;
@@ -75,7 +95,7 @@
     }
 
     #menu_lista > ul{
-        width: 47vw;
+        width: auto;
         margin: 0 auto;
     }
     #square1{

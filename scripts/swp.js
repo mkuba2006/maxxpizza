@@ -1,9 +1,36 @@
 var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    //   renderBullet: function (index, className) {
-    //     return '<span class="' + className + '">' + 'a' + "</span>";
-    //   },
-    },
-  });
+  enabled:true,
+  momentum:true,
+  momentumBounce:true,
+  momentumVelocityRatio	:true,
+  momentumRatio	:true,
+  autoplay: {
+    delay: 3000,
+    speed: 130000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$('.center').slick({
+    arrows: false,
+    slidesToShow: 3,
+    speed: 500,
+    infinite: true,
+    draggable: false,
+    focusOnChange: false,
+    easing: 'linear',
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            centerMode: true,
+            slidesToShow: 3
+        }
+        },
+    ]
+});

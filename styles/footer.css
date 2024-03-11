@@ -1,18 +1,18 @@
 #footer {
     display: flex;
     flex-direction: column;
-    padding: 40px 10vw;
+    padding: 40px 10vw 10px 10vw;
     font-family: 'Montserrat', sans-serif;
-    color: #354259;
+    color: white;
 }
 
-@media screen and (max-width: 1470px){
+@media screen and (max-width: 1570px){
     #footer {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px;
+        padding: 40px 50px 10px 50px;
         font-family: 'Montserrat', sans-serif;
-        color: #354259;
+        color: white;
         overflow-x: hidden;
     }
 }
@@ -21,13 +21,13 @@
 #footer #line_1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 50px;
 }
 
 #footer #line_1 #wiecej {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -39,11 +39,11 @@
 }
 
 #footer #line_1 #wiecej div h1{
-    font-size: 30px;
-    color: #354259;
+    font-size: 17px;
+    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin: 0 0 10px 0;
+    font-weight: 400;
+    margin: 0 0 0 0;
 }
 
 
@@ -60,29 +60,29 @@
 
 
 #footer #line_1 #wiecej div #ull{
-    padding: 0 0 0 5px;
-    color: #354259;
-    font-size: 20px;
+    padding: 0 0 0 1px;
+    color: white;
     max-width: 220px;
 }
 #footer #line_1 #wiecej div #ull li{
     list-style-type: none;
     margin-bottom: 5px;
     width: auto;
+    font-size: 17px;
 }
 
 
 
 iframe{
-    width:500px;
-    height:350px;
+    width:35vw;
+    height:300px;
     border: 0;
     border-radius: 12px;
 }
 
 #glovo{
     text-decoration: none;
-    color: #354259;
+    color: white;
 }
 
 
@@ -92,7 +92,7 @@ iframe{
     display: flex;
     flex-direction: column;
     position: relative; 
-    color: #354259;
+    color: white;
 }
 
 #linia {
@@ -100,5 +100,21 @@ iframe{
     height: 1px;
     width: 100%;
     border-radius: 8px;
-    background-color: #354259; 
+    background-color: white; 
+}
+
+#prawa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+#linki{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }

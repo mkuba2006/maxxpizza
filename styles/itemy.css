@@ -4,12 +4,15 @@
     flex-direction: column;
     padding: 0 5vw;
     font-family: 'Montserrat', sans-serif;
-    padding: 50px 7vw 50px 7vw ;
+    padding: 50px 0 50px 0 ;
+}
+#col1{
+    padding: 0 7vw;
 }
 
 @media screen and (max-width: 1900px){
     #itemy{
-        padding: 50px 1vw 50px 1vw ;
+        padding: 50px 0 50px 0 ;
     }
     #itemy #tekst {
         display: flex;
@@ -17,7 +20,10 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0 6vw 0 6vw ;
+        padding: 0 3vw 0 3vw ;
+    }
+    #col1{
+        padding: 0 10px;
     }
 }
 
@@ -84,7 +90,6 @@
 
 
 #polecany{
-    background-color: white;
     width: 280px;
     display: flex;
     flex-direction: column;
