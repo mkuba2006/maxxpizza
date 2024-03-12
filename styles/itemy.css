@@ -61,7 +61,6 @@
     font-weight: 600;
     font-size: 18px;
     transition: 0.4s ease;
-    
 }
 #col2 button:hover{
     background-color: #354259;
@@ -197,10 +196,26 @@ ul{
 
 #lista_filtrow button a {
     z-index: 1000;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
     transition: 0.3s ease;
 }
 #lista_filtrow button:hover a {
     color: white;
+    font-size: 12px;
+}
+@media screen and (max-width: 900px){
+    #lista_filtrow button {
+        margin: 2px 0;
+        padding: 3px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+    #lista_filtrow button a {
+        font-size: 12px;
+    }
 }

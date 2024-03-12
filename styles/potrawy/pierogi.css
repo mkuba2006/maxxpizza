@@ -12,22 +12,22 @@
 #pierogi:nth-child(1){
     position: absolute;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: whitesmoke;
     height: 51px;
     transform: translateY(-50px);
 }
 
 #pierogi p:nth-child(1){
     width: 30px;
-    color: white;
+    color: whitesmoke;
 }
 #pierogi p:nth-child(2){
     width: 670px;
-    color: white;
+    color: whitesmoke;
 }
 #pierogi p:nth-child(3){
     width: 70px;
-    color: white;
+    color: whitesmoke;
 }
 
 
@@ -37,7 +37,7 @@
     }
     
     #pierogi p:nth-child(1){
-        width: 2vw;
+        width: 4vw;
     }
     #pierogi p:nth-child(2){
         width: 34vw;
@@ -53,4 +53,39 @@
     }
 
 
+}
+
+@media screen and (max-width: 1100px){
+    #pierogi:nth-child(1) {
+        height: 50px;
+    }
+    
+    #pierogi p:nth-child(1){
+        width: 4vw;
+    }
+    #pierogi p:nth-child(2){
+        width: 55vw;
+    }
+    
+    #pierogi p:nth-child(4) , #pierogi p:nth-child(5){
+        width: 4vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #pierogi:nth-child(1) {
+        height: 50px;
+    }
+    
+    #pierogi p:nth-child(1){
+        width: 4vw;
+        min-width: 30px;
+    }
+    #pierogi p:nth-child(2){
+        width: 55vw;
+    }
+    
+    #pierogi p:nth-child(4) , #pierogi p:nth-child(5){
+        width: 4vw;
+    }
 }

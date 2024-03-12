@@ -15,30 +15,30 @@
 #potrawa2:nth-child(1){
     position: absolute;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: whitesmoke;
     height: 50px;
     transform: translateY(-50px);
-    color: white;
+    color: whitesmoke;
 }
 
 #potrawa2:nth-child(1) p{
     margin: auto 0;
     
-    color: white;
+    color: whitesmoke;
 }
 
 #potrawa2 p:nth-child(1){
     width: 25px;
-    color: white;
+    color: whitesmoke;
 }
 #potrawa2 p:nth-child(2){
     width: 160px;
-    color: white;
+    color: whitesmoke;
 }
 
 #potrawa2 p:nth-child(4), #potrawa2 p:nth-child(5){
     width: 60px;
-    color: white;
+    color: whitesmoke;
 }
 
 #potrawa2 div{
@@ -51,7 +51,7 @@
     padding: 0 15px 0 10px;
     font-weight: 400;
     margin: 5px 0;
-    color: white;
+    color: whitesmoke;
 }
 
 #potrawa2 div #sklad {
@@ -62,14 +62,13 @@
 
 
 
-@media screen and (max-width: 1600px){
-
-    
+@media screen and (max-width: 1600px){ 
     #potrawa2 p:nth-child(1){
         width: 2vw;
     }
     #potrawa2 p:nth-child(2){
-        width: 8vw;
+        width: 10vw;
+        min-width: 150px;
     }
     
     #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
@@ -80,6 +79,62 @@
         width: 25vw;
         padding: 0 10px;
     }
+}
 
+@media screen and (max-width: 1100px){ 
+    #potrawa2 p:nth-child(1){
+        width: 4vw;
+    }
+    #potrawa2 p:nth-child(2){
+        width: 15vw;
+    }
+    
+    #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
+        width: 5vw;
+    }
+    
+    #potrawa2 div{
+        width: 40vw;
+    }
+}
 
+@media screen and (max-width: 900px){ 
+    #potrawa2 p:nth-child(1){
+        width: 4vw;
+    }
+    #potrawa2 p:nth-child(2){
+        width: 20vw;
+        min-width: 170px;
+    }
+    
+    #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
+        width: 5vw;
+        min-width: 50px;
+    }
+    
+    #potrawa2 div{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 570px){ 
+    #potrawa2 p:nth-child(1){
+        font-size: 12px;
+        width: 6vw;
+    }
+    #potrawa2 p:nth-child(2){
+        font-size: 12px;
+        width: 75vw;
+        min-width: 0;
+    }
+    
+    #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
+        font-size: 12px;
+        width: 5vw;
+    }
+    
+    #potrawa2 div{
+        width: 50vw;
+        display: none;
+    }
 }
