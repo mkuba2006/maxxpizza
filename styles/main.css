@@ -127,8 +127,141 @@ button{
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1170px){
     #main div p, #main div h4, #main div #dwa {
         margin: 5px 5px 5px 5%;
+    }
+
+    #main div p {
+        font-size: 55px;
+        width: 600px;
+        max-width: 450px;
+    }
+
+    #main div h4 {
+        font-size: 15px;
+        padding-top: 40px;
+        width: 50vw;
+        max-width: 450px;
+    }
+    #main div #dwa{
+        justify-content: flex-start;
+        width: 60vw;
+        flex-wrap: wrap;
+        padding: 3vh 0 0 0;
+        height: auto;
+        row-gap: 30px;
+    }
+    #main{
+        padding-top: 5vh;
+        min-height: 600px;
+    }
+    #main div{
+        height: 80vh;
+    }
+    #main div #dwa #seemenu{
+        border: none;
+        font-size: 21px;
+        padding: 16px 50px;
+        background: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+
+    #main div p {
+        font-size: 50px;
+        width: 80vw;
+        max-width: 450px;
+    }
+
+    #main div h4 {
+        font-size: 15px;
+        padding-top: 40px;
+        width: 50vw;
+        max-width: 70vw;
+    }
+    #main div #dwa{
+        justify-content: flex-start;
+        width: 60vw;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 8vh 0 0 0;
+        height: auto;
+        row-gap: 10px;
+    }
+    #main{
+        padding-top: 5vh;
+        min-height: 600px;
+    }
+    #main div{
+        height: 80vh;
+    }
+
+    #main div #dwa #order{
+        font-size: 18px;
+        padding: 8px 32px;
+        border-radius: 1000px;
+        background-color: #D80032;
+        color: white;
+        transition: 0.2s;
+    }
+    #main div #dwa #seemenu{
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    #main div p {
+        font-size: 40px;
+        width: 90vw;
+        max-width: 450px;
+    }
+
+    #main div h4 {
+        font-size: 15px;
+        padding-top: 40px;
+        width: 65vw;
+        max-width: 65vw;
+    }
+    #main div #dwa{
+        justify-content: flex-start;
+        width: 60vw;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 8vh 0 0 0;
+        height: auto;
+        row-gap: 10px;
+    }
+    #main{
+        padding-top: 1vh;
+        min-height: 600px;
+    }
+    #main div{
+        height: 80vh;
+    }
+
+    #main div #dwa #order{
+        font-size: 18px;
+        padding: 8px 32px;
+        border-radius: 1000px;
+        background-color: #D80032;
+        color: white;
+        transition: 0.2s;
+    }
+    #main div #dwa #seemenu{
+        font-size: 18px;
+        padding: 8px 15px;
     }
 }

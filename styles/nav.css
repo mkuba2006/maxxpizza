@@ -63,6 +63,11 @@ nav {
 
 
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 550px) {
+    #logo_img{
+        width: 70vw;
+    }
+    #links button a{
+        font-size: 12px;
+    }
 }
