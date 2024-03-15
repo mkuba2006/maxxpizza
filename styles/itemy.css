@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 5vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 50px 0 50px 0 ;
 }
 #col1{
@@ -50,12 +50,13 @@
 }
 #itemy #tekst #col1 h5{
     font-weight: 500;
+    color: #777;
 }
 
 #col2 button{
     padding: 10px 32px;
     background: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid #354259;
     border-radius: 8px;
     font-weight: 600;
@@ -168,7 +169,7 @@ ul{
 
 
 #lista_filtrow button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 2px 0;
     background: none;
     border: 1px solid black;

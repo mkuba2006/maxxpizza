@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px 10vw 10px 10vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
@@ -11,7 +11,8 @@
         display: flex;
         flex-direction: column;
         padding: 40px 50px 10px 50px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+
         color: white;
         overflow-x: hidden;
     }
@@ -39,10 +40,10 @@
 }
 
 #footer #line_1 #wiecej div h1{
-    font-size: 17px;
+    font-size: 20px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin: 0 0 0 0;
 }
 
@@ -61,7 +62,7 @@
 
 #footer #line_1 #wiecej div #ull{
     padding: 0 0 0 1px;
-    color: white;
+    color: #777;
     max-width: 220px;
 }
 #footer #line_1 #wiecej div #ull li{
@@ -82,7 +83,7 @@ iframe{
 
 #glovo{
     text-decoration: none;
-    color: white;
+    color: #777;
 }
 
 

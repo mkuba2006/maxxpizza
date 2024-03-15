@@ -60,9 +60,9 @@ button{
 #main div p {
     z-index: 100;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 82px;
-    font-weight: 700;
+    font-weight: bold;
     margin: 5px 5px 5px 13%;
     width: 600px;
 }
@@ -72,12 +72,13 @@ button{
 
 #main div h4 {
     z-index: 100;
-    color: #aeaeae9d;
+    color: #777;
     text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin: 5px 5px 5px 13%;
     padding-top: 40px;
+    font-weight: 500;
     width: 460px;
 }
 
@@ -85,15 +86,15 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 450px;
+    width: 500px;
     margin: 5px 5px 5px 13%;
     padding: 100px 0 0 0;
-    height: 70px;
+    height: auto;
 }
 
 #main div #dwa #order{
     border: none;
-    font-size: 21px;
+    font-size: 20px;
     padding: 16px 64px;
     border-radius: 1000px;
     background-color: #D80032;
@@ -107,8 +108,9 @@ button{
 
 
 #main div #dwa #seemenu{
+    font-family: 'Poppins', sans-serif;
     border: none;
-    font-size: 21px;
+    font-size: 20px;
     padding: 0 0 0 32px;
     background: none;
     color: white;
