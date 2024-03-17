@@ -47,6 +47,7 @@ body {
 #cnt{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 30px;
     justify-content: center;
     margin: 20px 0 0 0;
@@ -184,4 +185,64 @@ body {
 }
 #itemy > div.center.slick-initialized.slick-slider > div > div div h3 span{
   color: white;
+}
+
+@media screen and (max-width:1100px){
+  #polecany2 #opis h2 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 22px;
+    height: auto;
+  }
+
+  #polecany2 #opis h4{
+    height: 250px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  #polecany2:nth-child(3){
+    display: none;
+  }
+
+  #polecany2{
+    width: 40vw;
+    display: flex;
+    border-radius: 10px;
+  }
+  #polecany2 #opis{
+      text-align: left;
+      padding: 0 4px;
+  }
+  #polecany2 #opis h2{
+      font-size: 20px;
+  }
+  #polecany2 #opis h4{
+      font-size: 10px;
+  }
+  #swp {
+    min-height: 400px;
+    max-height: 470px;
+    height: max-content;
+    margin: 0 0 20px 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+
+  #polecany2 #opis{
+      text-align: left;
+      padding: 0 4px;
+  }
+  #polecany2 #opis h2{
+      font-size: 15px;
+  }
+  #polecany2 #opis h4{
+      font-size: 10px;
+  }
 }
