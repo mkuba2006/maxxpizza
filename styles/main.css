@@ -10,6 +10,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background: white;
 }
 
 #footer{
@@ -17,6 +18,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background: #080202;
 }
 button{
     cursor: pointer;

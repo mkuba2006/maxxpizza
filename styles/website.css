@@ -4,3 +4,6 @@ html, body{
     box-sizing: content-box;
     overflow-x: hidden;
 }
+html {
+    scroll-behavior: smooth;
+}
