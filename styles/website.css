@@ -7,3 +7,31 @@ html, body{
 html {
     scroll-behavior: smooth;
 }
+
+
+nav{
+    background-color: #1b1b1b;
+}
+
+
+#real_menu{
+    background-color: #1b1b1b;
+}
+
+#itemy{
+    background: url('https://img.freepik.com/darmowe-zdjecie/kamien-tekstury_1194-5387.jpg?t=st=1710022490~exp=1710026090~hmac=8cffaf26d3080f380cd8373bba626bd6a326c3f07595bb9bd53dc6af72fd9a51&w=996');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer{
+    background-color: #1b1b1b;
+}
+
+#main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

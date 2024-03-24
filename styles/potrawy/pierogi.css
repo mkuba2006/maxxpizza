@@ -22,11 +22,13 @@
     color: whitesmoke;
 }
 #pierogi p:nth-child(2){
-    width: 670px;
+    width: 685px;
     color: whitesmoke;
 }
 #pierogi p:nth-child(3){
-    width: 70px;
+    width: 100px;
+    justify-content: center;
+    display: flex;
     color: whitesmoke;
 }
 

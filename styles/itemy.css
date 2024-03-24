@@ -165,6 +165,7 @@ ul{
     flex-direction: column;
     padding-top: 13px;
     width: 200px;
+    border-right: 2px solid black;
 }
 
 
@@ -172,7 +173,7 @@ ul{
     font-family: 'Poppins', sans-serif;
     margin: 2px 0;
     background: none;
-    border: 1px solid black;
+    border: none;
     padding: 6px 12px;
     position: relative;
     overflow: hidden;

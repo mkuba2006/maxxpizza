@@ -1,48 +1,13 @@
-
-
-nav{
-    background-color: #1b1b1b;
-}
-
-
-#itemy{
-    background: url('https://img.freepik.com/darmowe-zdjecie/kamien-tekstury_1194-5387.jpg?t=st=1710022490~exp=1710026090~hmac=8cffaf26d3080f380cd8373bba626bd6a326c3f07595bb9bd53dc6af72fd9a51&w=996');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: white;
-}
-
-#footer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('https://maxxpizza.pl/maxxpizza_files/vlb_images1/maxxpizza8.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: #080202;
-}
 button{
     cursor: pointer;
-
 }
+
 
 #main {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/bg6.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-#main video {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
-}
 #main div{
     overflow-x: hidden;
     align-items: flex-start;
@@ -55,7 +20,15 @@ button{
     flex-direction: column;
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+}
+
+
+
+@media screen and (min-width:1300px){
+    #main {
+        min-height: 800px;
+    }
 }
 
 
@@ -105,10 +78,11 @@ button{
     background-color: #D80032;
     color: white;
     font-weight: 500;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 #main div #dwa #order:hover{
-    background-color: #d80032e5;
+    background-color: white;
+    color: #d80032e5;
 }
 
 
