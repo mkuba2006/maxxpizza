@@ -1,20 +1,26 @@
-nav {
+nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    padding: 10px 0;
+    padding: 30px 0;
     align-items: center;
     justify-content: center;
+    column-gap: 20vw;
     flex-wrap: wrap;
-    column-gap: 40vw;
     z-index: 1000;
+    background-color: #00000000;
+    backdrop-filter: blur(1px); 
+    transition: 0.5s ;
+}
+nav.scrolled {
+    background-color: black;
 }
 
 #logo_img{
-    width: 400px;
+    width: 200px;
 }
 #links {
     display: flex;
@@ -38,7 +44,20 @@ nav {
     cursor: pointer;
     transition: all 0.3s;
 }
-
+#extras button{
+    border: none;
+    font-size: 17px;
+    padding: 12px 30px;
+    border-radius: 1000px;
+    background-color: black;
+    color: #b3b3b3;
+    font-weight: 500;
+    transition: 0.3s;
+    text-align: center;
+}
+#extras button:hover{
+    color: white;
+}
 #links button a{
     transition: all 0.3s;
     text-decoration: none;
@@ -58,7 +77,7 @@ nav {
 #links button:hover a{
     color: white;
 }
-#links button:hover::before {
+#links button:hover::before{
     width: 100%;
 }
 
