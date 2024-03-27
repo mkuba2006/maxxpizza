@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +39,7 @@
                 <a href="#footer">KONTAKT</a>
             </button>
             <button>
-                <a>Polecamy</a>
+                <a href="#col1">Polecamy</a>
             </button>
             <button>
                 <a>GALERIA</a>
@@ -55,7 +54,7 @@
 
     <section id="main">
         <div>
-            <p><span>MORE</span> THAN JUST PIZZA</p>  
+            <p id="main_p"><span>MORE</span> THAN JUST PIZZA</p>  
             <h4>Nasze menu ma coś dla wszytkich niezdecydowanych. Odwiedź nas lub zamów z dostawą prosto pod drzwi </h4>
             <div id="dwa">
                 <a href="https://glovoapp.com/pl/pl/gdansk/maxx-pizza/?utm_campaign=maplinks&utm_medium=organic&utm_source=googlemaps">
@@ -218,7 +217,7 @@
     </section>
 
     <section id="comments">
-        <div></div>
+        <p class="text-example">Total number of lines: <span id="myNumber">0</span></p>
         <div></div>
         <div></div>
         <div></div>
@@ -250,7 +249,7 @@
                 <div id="dane">
                     <h1>Info</h1>
                     <ul id="ull">
-                        <li><a id="Domenu">menu</a></li>
+                        <li><a id="Domenu" href="#real_menu">menu</a></li>
                         <li><a id="Dogaleria">galeria</a></li>
                         <li><a id="Dowiecej">wiecej</a></li>
                     </ul>
@@ -276,7 +275,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -285,5 +286,10 @@
     <script src="./scripts/dania_item.js"></script>
     <script src="./scripts/swp.js"></script>
     <script src="./scripts/nav.js"></script>
+    <script src="./scripts/ScrollReveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+    <script>
+        var myNumberTween = KUTE.to('#myNumber', {number: 1550}); 
+    </script>
 </body>
 </html>
