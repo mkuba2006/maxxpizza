@@ -29,6 +29,10 @@ nav.scrolled {
     align-self: center;
     justify-content: space-between;
     position: relative;
+    padding: 12px 20px;
+    background: none;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 
 #links button {
@@ -49,7 +53,7 @@ nav.scrolled {
     font-size: 17px;
     padding: 12px 30px;
     border-radius: 1000px;
-    background-color: black;
+    background: none;
     color: #b3b3b3;
     font-weight: 500;
     transition: 0.3s;

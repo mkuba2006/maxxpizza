@@ -1,9 +1,10 @@
 let dania = Dania;
 let domenu = document.getElementById('domenu');
 let itemy = document.getElementById('itemy');
+
 let tekst = document.getElementById('tekst');
 let tekst2 = document.getElementById('swiper');
-let menu = document.getElementById('menu');
+let menu = document.getElementById('menu_lista');
 let rlmenu = document.getElementById('menu_lista');
 const lista_filtrow = document.createElement('div');
 lista_filtrow.id = 'lista_filtrow';
@@ -116,8 +117,6 @@ const filtry_szkic = () => {
 };
 
 const ustaw__default_itemy = (grupa) => {
-    // document.querySelector("#col1 > h1").textContent = 'Menu';
-    // document.querySelector("#col1 > h5").textContent = 'Zobacz naszą ofertę';
     document.getElementById("col2").style.display='none';
     menu.innerHTML = '';
     let ul = document.createElement('ul');
@@ -128,7 +127,6 @@ const ustaw__default_itemy = (grupa) => {
         ul.innerHTML += pizza_szkic(potrawa.id, potrawa.nazwa, potrawa.min, potrawa.max, potrawa.składniki);
     }
 
-    //menu.innerHTML += `<ul>${ul.innerHTML}</ul>`;
     filtry_szkic();
     itemy.appendChild = menu.innerHTML;
     rlmenu.innerHTML = `<ul>${ul.innerHTML}</ul>`;
