@@ -1,13 +1,17 @@
-const default_color = document.getElementById("links").style.backgroundColor;
+const nav = document.getElementById("links");
+const extras_button = document.getElementById("extras_button");
+const defaultColor = window.getComputedStyle(nav).backgroundColor;
+const logo = document.getElementById("logo_img");
 
-document.body.addEventListener("scroll", () => {
-    var nav = document.getElementById("links");
-    var extras_button = document.getElementById("extras_button");
-    if (document.body.scrollTop > 300) {
+document.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
         nav.style.backgroundColor = 'black';
         extras_button.style.backgroundColor = 'black';
+        logo.style.backgroundColor = 'black';
+        logo.style.padding='14px 24px'
+        logo.style.borderRadius='32px'
     } else {
-        nav.style.backgroundColor = default_color;
-        extras_button.style.backgroundColor = default_color;
+        nav.style.backgroundColor = defaultColor;
+        extras_button.style.backgroundColor = defaultColor;
     }
 });

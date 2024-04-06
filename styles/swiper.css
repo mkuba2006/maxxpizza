@@ -11,6 +11,9 @@ body {
 .swiper {
   width: 100vw;
   height: 700px;
+  overflow-x: hidden;
+  width: 95vw;
+  margin: 0;
 }
 
 .swiper-slide {
@@ -103,11 +106,11 @@ body {
   #cnt{
     height: auto;
     flex-wrap: wrap;
-    width: 100%;
+    width: 98vw;
   }
 
   #polecany2{
-    width: 30%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     height: min-content;

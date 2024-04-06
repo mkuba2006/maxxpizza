@@ -12,7 +12,6 @@ button{
 }
 
 #main div{
-    overflow-x: hidden;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,6 @@ button{
     padding-top: 100px;
     position: relative;
     flex-direction: column;
-    overflow: hidden;
     width: 100vw;
     height: 100%;
 }
@@ -154,12 +152,23 @@ button{
         overflow: visible;
     }
 }
+@media screen and (max-width: 1100px){
+    #main{
+        padding-top: 5vh;
+        min-height: 60vw;
+        max-height: 80vh;
+    }
+    #main div{
+        padding-top: 70px;
+        height: 70vh;
+    }
+    
+}
 
 
-@media screen and (max-width: 650px){
-
+@media screen and (max-width: 880px){
     #main div p {
-        font-size: 50px;
+        font-size: 55px;
         width: 80vw;
         max-width: 450px;
     }
@@ -167,15 +176,40 @@ button{
     #main div h4 {
         font-size: 15px;
         padding-top: 40px;
-        width: 50vw;
+        width: 80vw;
+        max-width: 450px;
+    }
+    #main div #dwa{
+        justify-content: flex-start;
+        width: auto;
+        flex-wrap: wrap;
+        padding: 3vh 0 0 0;
+        height: auto;
+        row-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+
+    #main div p {
+        font-size: 50px;
+        width: 70vw;
+        max-width: 450px;
+    }
+
+    #main div h4 {
+        font-size: 15px;
+        padding-top: 40px;
+        width: 60vw;
         max-width: 70vw;
     }
     #main div #dwa{
         justify-content: flex-start;
-        width: 60vw;
+        width: auto;
         flex-wrap: wrap;
         align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
         padding: 8vh 0 0 0;
         height: auto;
         row-gap: 10px;

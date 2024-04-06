@@ -4,10 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   momentumBounce:true,
   momentumVelocityRatio	:true,
   momentumRatio	:true,
-  autoplay: {
-    delay: 5000,
-    speed: 1300,
-  },
+  autoplay: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

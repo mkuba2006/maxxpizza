@@ -1,17 +1,16 @@
 let dania = Dania;
 let domenu = document.getElementById('domenu');
 let itemy = document.getElementById('itemy');
-
 let tekst = document.getElementById('tekst');
 let tekst2 = document.getElementById('swiper');
 let menu = document.getElementById('menu_lista');
 let rlmenu = document.getElementById('menu_lista');
 const lista_filtrow = document.createElement('div');
+
 lista_filtrow.id = 'lista_filtrow';
 
 const pizza_szkic = (id, nazwa, cena_min, cena_max, skład) => {
     let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
-
     return `
         <li id="potrawa">
             <p>${id}</p>
@@ -25,7 +24,6 @@ const pizza_szkic = (id, nazwa, cena_min, cena_max, skład) => {
 
 const dania_szkic = (id, nazwa, cena, skład) => {
     let składHTML = skład.map(sklad => `<h4 id="sklad">${sklad},</h4>`).join(''); 
-
     return `
         <li id="potrawa2">
             <p>${id}</p>
@@ -68,7 +66,6 @@ const ustaw_pierogi = (grupa) => {
 
 
 const ustaw_itemy = (grupa) => {
-    
     rlmenu.innerHTML = '';
     let ul = document.createElement('ul');
     ul.innerHTML += dania_szkic('nr', 'nazwa', 'cena', ['składniki']);
@@ -96,7 +93,6 @@ const filtry_szkic = () => {
         let button = document.createElement('button');
         button.appendChild(link);
         button.id = arr.Grupa;
-        
         lista_filtrow.appendChild(button);
 
         button.addEventListener('click',()=>{
@@ -116,7 +112,7 @@ const filtry_szkic = () => {
     document.getElementById('dlamenu').appendChild(lista_filtrow);
 };
 
-const ustaw__default_itemy = (grupa) => {
+const ustaw__default_itemy = () => {
     document.getElementById("col2").style.display='none';
     menu.innerHTML = '';
     let ul = document.createElement('ul');
@@ -131,5 +127,7 @@ const ustaw__default_itemy = (grupa) => {
     itemy.appendChild = menu.innerHTML;
     rlmenu.innerHTML = `<ul>${ul.innerHTML}</ul>`;
 };
-ustaw__default_itemy();
-domenu.addEventListener('click', ustaw__default_itemy);
+window.onload = function() {
+    ustaw__default_itemy();
+    document.querySelector('#domenu').addEventListener('click', ustaw__default_itemy);
+}
