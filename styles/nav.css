@@ -85,6 +85,42 @@ nav.scrolled {
 }
 
 
+@media screen and (max-width:1600px){
+    nav{
+        width: auto;
+        margin: 0 15vw;
+        column-gap: 0;
+        padding: 0;
+        border-radius: 32px;
+        padding: 5px 0px;
+        align-items: center;
+        background-color: #000000;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:1280px){
+    #nav{
+        background: black;
+        column-gap: 0;
+        padding:  5px;
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #extras{
+        display: none;
+    }
+    #nav{
+        width: 96vw;
+        justify-content: space-between;
+        padding: 5px 2vw;
+    }
+}
 
 
 @media screen and (max-width: 550px) {
