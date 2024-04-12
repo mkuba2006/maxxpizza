@@ -1,18 +1,28 @@
 #footer {
     display: flex;
     flex-direction: column;
+    width: 80vw;
     padding: 40px 10vw 10px 10vw;
     font-family: 'Poppins', sans-serif;
     color: #F3F8FF;
 }
 
 @media screen and (max-width: 1570px){
+    /* #footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 2vw 10px 2vw;
+        font-family: 'Poppins', sans-serif;
+        width: 96vw;
+        color: #F3F8FF;
+        overflow-x: hidden;
+    } */
     #footer {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px 10px 50px;
+        padding: 40px 0 10px 0;
         font-family: 'Poppins', sans-serif;
-
+        width: 100vw;
         color: #F3F8FF;
         overflow-x: hidden;
     }
@@ -86,7 +96,12 @@ iframe{
     color: #9500ffce;
     transition: 0.3s;
 }
-#glovo:hover{
+#Domenu {
+    text-decoration: none;
+    color: #9500ffce;
+}
+
+#glovo:hover , #Domenu:hover{
     color: #9400FF;
 }
 
@@ -102,7 +117,7 @@ iframe{
 #linia {
     position: absolute;
     height: 1px;
-    width: 100%;
+    width: 98%;
     border-radius: 8px;
     background-color: #F3F8FF; 
 }
@@ -121,4 +136,23 @@ iframe{
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+}
+
+@media screen and (max-width:1000px){
+    #mapa{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #prawa{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #prawa p{
+        font-size: 12px;
+        text-align: center;
+    }
 }

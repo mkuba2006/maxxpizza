@@ -202,7 +202,7 @@ ul{
 
 
 @media screen and (max-width: 600px){
-    #lista_filtrow button a {
-        font-size: 12px;
+    #itemy{
+        display: none;
     }
 }

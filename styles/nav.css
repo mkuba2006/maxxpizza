@@ -49,11 +49,11 @@ nav.scrolled {
 }
 #extras button{
     border: none;
-    font-size: 15px;
+    font-size: 16px;
     padding: 12px 30px;
     border-radius: 1000px;
     background: none;
-    color: #cccccc;
+    color: #fcfcfc;
     font-weight: 500;
     transition: 0.3s;
     text-align: center;
@@ -86,9 +86,9 @@ nav.scrolled {
 
 
 @media screen and (max-width:1600px){
-    nav{
-        width: auto;
-        margin: 0 15vw;
+    nav {
+        width: 70vw;
+        margin: 50px 15vw 0 15vw;
         column-gap: 0;
         padding: 0;
         border-radius: 32px;
