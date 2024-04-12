@@ -123,6 +123,30 @@ nav.scrolled {
 }
 
 
+@media screen and (max-width: 770px) {
+    #nav{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    #logo{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo_img{
+        width: 40%;
+    }
+    #links {
+        display: none;
+    }
+}
+
+
+
+
 @media screen and (max-width: 550px) {
     #logo_img{
         width: 70vw;
