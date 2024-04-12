@@ -149,3 +149,17 @@
     }
 
 }
+
+
+@media screen and (max-width: 600px){
+    #real_menu {
+        padding: 0;
+        overflow: visible;
+        height: 700px;
+    }
+    #square1 ul {
+        height: 350px;
+    }
+}
+
+
