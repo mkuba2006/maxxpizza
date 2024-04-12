@@ -138,3 +138,25 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 480px){ 
+    #potrawa2 p:nth-child(1){
+        font-size: 12px;
+        width: 6vw;
+    }
+    #potrawa2 p:nth-child(2){
+        font-size: 12px;
+        width: 60vw;
+        min-width: 0;
+    }
+    
+    #potrawa2 p:nth-child(4) , #potrawa2 p:nth-child(5){
+        font-size: 12px;
+        width: 5vw;
+    }
+    
+    #potrawa2 div{
+        width: 40vw;
+        display: none;
+    }
+}

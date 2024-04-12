@@ -96,3 +96,28 @@
         width: 4vw;
     }
 }
+
+
+@media screen and (max-width: 480px){ 
+    #pierogi:nth-child(1) {
+        height: 50px;
+        font-size: 12px;
+    }
+    
+    #pierogi p:nth-child(1){
+        width: 4vw;
+        min-width: 30px;
+        font-size: 12px;
+    }
+    #pierogi p:nth-child(2){
+        width: 58vw;
+        font-size: 12px;
+    }
+    #pierogi p:nth-child(3){
+        width: 60px;
+    }
+    #pierogi p:nth-child(4) , #pierogi p:nth-child(5){
+        width: 4vw;
+    }
+
+}
