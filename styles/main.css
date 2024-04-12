@@ -289,3 +289,19 @@ button{
         padding: 8px 15px;
     }
 }
+
+@media screen and (max-width: 350px){
+    #main div #dwa #order {
+        font-size: 13px;
+        padding: 8px 32px;
+        border-radius: 1000px;
+        background-color: #D80032;
+        color: white;
+        transition: 0.2s;
+    }
+    #main div #dwa #seemenu {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+}

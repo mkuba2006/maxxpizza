@@ -155,4 +155,17 @@ iframe{
         font-size: 12px;
         text-align: center;
     }
+    #footer #line_1 #wiecej  {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer #line_1 #wiecej div{
+        width: 200px;
+        max-width: 200px;
+        
+    }
+    #footer #line_1 #wiecej div#kontakt, #footer #line_1 #wiecej div#dane {
+        max-width: 200px;
+    }
 }
