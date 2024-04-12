@@ -4,6 +4,9 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -17,6 +20,8 @@ body{
 
 #footer{
     background-color: #101720;
+    background: url('../images/wave-haikei\ \(17\).svg');
+    background-size: cover;
 }
 
 #main {
@@ -27,6 +32,5 @@ body{
 }
 nav{
     background-color: #101720;
-    background: none;
 }
 

@@ -137,15 +137,20 @@
         flex-direction: column;
         width: auto;
     }
+    #lista_filtrow::-webkit-scrollbar {
+        width: 0; 
+    }
+    
     #lista_filtrow {
         flex-direction: row;
         width: 100vw;
         overflow-x: scroll;
         border: none;
     }
+    
     #lista_filtrow button{
         width: auto;
-        min-width: 100px;
+        min-width: 105px;
     }
 
 }

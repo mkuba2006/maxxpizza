@@ -1,5 +1,5 @@
 nav{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -20,6 +20,7 @@ nav.scrolled {
 }
 
 #logo_img{
+    padding: 14px 24px;
     width: 200px;
 }
 #links {
@@ -128,7 +129,9 @@ nav.scrolled {
         width: 100vw;
         margin: 0;
         padding: 20px 0;
+        position: absolute;
         align-items: center;
+        background: none;
     }
     #logo{
         width: 100vw;

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 80vw;
-    padding: 40px 10vw 10px 10vw;
+    padding: 180px 10vw 10px 10vw;
     font-family: 'Poppins', sans-serif;
     color: #F3F8FF;
 }
@@ -20,7 +20,8 @@
     #footer {
         display: flex;
         flex-direction: column;
-        padding: 40px 0 10px 0;
+        padding: 180px 0 10px 0;
+        align-items: center;
         font-family: 'Poppins', sans-serif;
         width: 100vw;
         color: #F3F8FF;
