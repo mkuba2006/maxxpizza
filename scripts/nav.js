@@ -12,7 +12,6 @@ if (window.innerWidth >750){
             logo.style.borderRadius='32px'
         } else {
             nav.style.backgroundColor = defaultColor;
-            extras_button.style.backgroundColor = defaultColor;
         }
     });
     

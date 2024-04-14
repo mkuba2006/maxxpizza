@@ -92,18 +92,14 @@ iframe{
     border-radius: 12px;
 }
 
-#glovo{
+#glovo, #Domenu {
     text-decoration: none;
     color: #9500ffce;
     transition: 0.3s;
 }
-#Domenu {
-    text-decoration: none;
-    color: #9500ffce;
-}
 
 #glovo:hover , #Domenu:hover{
-    color: #9400FF;
+    color: #45FFCA;
 }
 
 #footer #line_2{

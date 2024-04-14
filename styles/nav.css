@@ -38,29 +38,30 @@ nav.scrolled {
 #links button {
     position: relative;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.1px;
     font-weight: 400;
     background: none;
     border: 0;
     padding: 4px 8px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.3s;
 }
 #extras button{
     border: none;
     font-size: 16px;
-    padding: 12px 30px;
+    padding: 14px 30px 12px 30px;
     border-radius: 1000px;
     background: none;
     color: #fcfcfc;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.5s;
     text-align: center;
 }
 #extras button:hover{
     color: white;
+    background-color: rgb(15, 15, 15);
 }
 #links button a{
     transition: all 0.3s;
