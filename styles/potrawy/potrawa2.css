@@ -14,7 +14,7 @@
 
 #potrawa2:nth-child(1){
     position: absolute;
-    background-color: rgb(0, 0, 0);
+    background-color: #007F73;
     color: whitesmoke;
     height: 50px;
     transform: translateY(-50px);

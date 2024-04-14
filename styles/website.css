@@ -19,18 +19,32 @@ body{
 }
 
 #footer{
-    background-color: #101720;
-    background: url('../images/wave-haikei\ \(17\).svg');
+    background: url('../images/footer1.svg');
     background-size: cover;
 }
 
 #main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/wc5.png');
+    background-image: url('../images/wave4.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 nav{
-    background-color: #101720;
+    background-color: #004225;
 }
 
+#gap {
+    width: 100vw;
+    height: 50px;
+    background-color: #101720;
+    position: relative;
+    z-index: 1;
+}
+
+
+@media screen and (max-width:1100px){
+    #footer{
+        background: url('../images/footer2.svg');
+        background-size: cover;
+    }
+}

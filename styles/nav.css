@@ -1,24 +1,27 @@
-nav{
+#nav {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    width: min-content; 
     display: flex;
-    flex-direction: row;
-    padding: 10px 0 30px 0;
+    justify-content: center; 
     align-items: center;
-    justify-content: center;
-    column-gap: 20vw;
-    flex-wrap: wrap;
+    padding: 6px 15px; 
+    margin-top: 10px;
     z-index: 1000;
-    background-color: #00000000;
-    backdrop-filter: blur(1px); 
-    transition: 0.5s ;
-}
-nav.scrolled {
-    background-color: black;
+    column-gap: 3vw;
+    transition: 0.5s all;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
+#nav.scrolled {
+    background-color: black;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #logo_img{
     padding: 14px 24px;
     width: 200px;
@@ -59,14 +62,11 @@ nav.scrolled {
     transition: 0.5s;
     text-align: center;
 }
-#extras button:hover{
-    color: white;
-    background-color: rgb(15, 15, 15);
-}
+
 #links button a{
     transition: all 0.3s;
     text-decoration: none;
-    color: #b3b3b3;
+    color: #e0e0e0;
 }
 
 #links button::before {
@@ -88,7 +88,7 @@ nav.scrolled {
 
 
 @media screen and (max-width:1600px){
-    nav {
+    #nav {
         width: 70vw;
         margin: 50px 15vw 0 15vw;
         column-gap: 0;
